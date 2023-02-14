@@ -1,7 +1,7 @@
 import { Text } from 'react-native';
 
-const ProfileScreen = ({navigation, route}) => {
+const Screen2 = ({navigation, route}) => {
     return <Text>This is {route.params.name}'s profile</Text>;
 };
 
-export default ProfileScreen;
+export default Screen2;

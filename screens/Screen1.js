@@ -1,14 +1,14 @@
 import { Button } from 'react-native';
 
-const HomeScreen = ({navigation}) => {
+const Screen1 = ({navigation}) => {
     return (
         <Button
             title="Go to Jane's profile"
             onPress={() =>
-                navigation.navigate('Profile', {name: 'Jane'})
+                navigation.navigate('Экран 2', {name: 'Jane'})
             }
         />
     );
 };
 
-export default HomeScreen;
+export default Screen1;
