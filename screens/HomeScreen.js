@@ -1,4 +1,6 @@
-export default function HomeScreen({navigation}) {
+import { Button } from 'react-native';
+
+const HomeScreen = ({navigation}) => {
     return (
         <Button
             title="Go to Jane's profile"
@@ -7,4 +9,6 @@ export default function HomeScreen({navigation}) {
             }
         />
     );
-}
+};
+
+export default HomeScreen;
