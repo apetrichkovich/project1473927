@@ -10,7 +10,8 @@ export default class Screen2 extends Component {
         this.state = {
             current: 0,
             angels: [180, 180, 180, 180, 180],
-            images: [image1, image1, image1, image1, image1]
+            images: [image1, image1, image1, image1, image1],
+            showButton: false
         }
     }
 
@@ -36,6 +37,7 @@ export default class Screen2 extends Component {
                 state.current++;
             } else {
                 clearInterval(this.timerID);
+                state.showButton = true;
             }
         }
         this.setState(state);
@@ -51,7 +53,7 @@ export default class Screen2 extends Component {
                     <Image source={this.state.images[3]} style={[styles.image, {transform: [{rotateX: this.state.angels[3] + 'deg'}]}]}/>
                     <Image source={this.state.images[4]} style={[styles.image, {transform: [{rotateX: this.state.angels[4] + 'deg'}]}]}/>
                 </View>
-                <Button title="Экран 3" onPress={() => this.props.navigation.navigate('Экран 3', {name: 'Jane'})}/>
+                {this.state.showButton && <Button title="Описание" onPress={() => this.props.navigation.navigate('Экран 3')}/>}
             </View>
         );
     }

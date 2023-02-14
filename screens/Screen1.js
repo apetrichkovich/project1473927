@@ -13,7 +13,7 @@ export default class Screen1 extends Component {
     }
     setUsername() {
         console.log('username is', this.state.username);
-        this.props.navigation.navigate('Экран 2', {name: this.state.username});
+        this.props.navigation.navigate('Экран 2');
 
     }
     render() {

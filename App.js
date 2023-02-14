@@ -9,13 +9,9 @@ export default function App() {
   return (
       <NavigationContainer>
         <Stack.Navigator>
-          <Stack.Screen
-              name="Экран 1"
-              component={Screen1}
-              options={{title: 'Экран 1'}}
-          />
-          <Stack.Screen name="Экран 2" component={Screen2} />
-          <Stack.Screen name="Экран 3" component={Screen3} />
+          <Stack.Screen name="Экран 1" component={Screen1}/>
+          <Stack.Screen name="Экран 2" component={Screen2}/>
+          <Stack.Screen name="Экран 3" component={Screen3}/>
         </Stack.Navigator>
       </NavigationContainer>
   );

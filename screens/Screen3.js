@@ -1,13 +1,15 @@
-import {Button, Text} from 'react-native';
+import {View, Button, Text} from 'react-native';
 
-const Screen3 = ({navigation, route}) => {
+const Screen3 = ({navigation}) => {
     return (
-        <Button
-            title="Экран 1"
-            onPress={() =>
-                navigation.navigate('Экран 1', {name: 'Jane'})
-            }
-        />
+        <View>
+            <Text>Картинка 1</Text>
+            <Text>Картинка 2</Text>
+            <Text>Картинка 3</Text>
+            <Text>Картинка 4</Text>
+            <Text>Картинка 5</Text>
+            <Button title="Ещё раз" onPress={() => navigation.navigate('Экран 1')}/>
+        </View>
     );
 };
 
