@@ -1,6 +1,6 @@
-import {Button, Text} from 'react-native';
+import { Button } from 'react-native';
 
-const Screen2 = ({navigation, route}) => {
+const Screen2 = ({navigation}) => {
     return (
         <Button
             title="Экран 3"
