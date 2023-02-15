@@ -45,7 +45,7 @@ export default class Screen2 extends Component {
 
     render() {
         return (
-            <View>
+            <>
                 <View style={styles.view}>
                     <Image source={this.state.images[0]} style={[styles.image, {transform: [{rotateX: this.state.angels[0] + 'deg'}]}]}/>
                     <Image source={this.state.images[1]} style={[styles.image, {transform: [{rotateX: this.state.angels[1] + 'deg'}]}]}/>
@@ -54,7 +54,7 @@ export default class Screen2 extends Component {
                     <Image source={this.state.images[4]} style={[styles.image, {transform: [{rotateX: this.state.angels[4] + 'deg'}]}]}/>
                 </View>
                 {this.state.showButton && <Button title="Описание" onPress={() => this.props.navigation.navigate('Экран 3')}/>}
-            </View>
+            </>
         );
     }
 };
