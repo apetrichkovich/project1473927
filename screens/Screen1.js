@@ -11,17 +11,18 @@ export default class Screen1 extends Component {
         }
         this.setUsername = this.setUsername.bind(this); // you need this to be able to access state from setUsername
     }
+
     setUsername() {
         console.log('username is', this.state.username);
         this.props.navigation.navigate('Экран 2');
-
     }
+
     render() {
         return (
             <ImageBackground source={image} resizeMode="cover" style={styles.image}>
                 <Text style={styles.text}>Как вас зовут?</Text>
-                <TextInput style={styles.input} onChangeText={(username) => {this.setState({username})}}/>
-                <Button title="OK" onPress={this.setUsername}/>
+                <TextInput testID="username" style={styles.input} onChangeText={(username) => {this.setState({username})}}/>
+                <Button testID="button" title="OK" onPress={this.setUsername}/>
             </ImageBackground>
         );
     }
