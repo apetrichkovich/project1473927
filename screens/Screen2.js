@@ -57,7 +57,7 @@ export default class Screen2 extends Component {
             </>
         );
     }
-};
+}
 
 const styles = StyleSheet.create({
     view: {
